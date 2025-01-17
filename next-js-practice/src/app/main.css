@@ -11,24 +11,7 @@
 }
 
 html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 
 a {
   color: inherit;
@@ -40,16 +23,117 @@ a {
     color-scheme: dark;
   }
 }
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+body {
+  font-family:'circular';
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
-header{
-  padding:20px 10px;
-  box-shadow: 0px 0px 1px gray;
+
+.checkout-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+background-color: green;
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #fff;
+
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 70%;
+}
+.checkout-wrapper>div{
+  width: 50%;
+}
+.payment-gateway {
+ 
+  text-align: center;
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  align-items: center;
+ 
+}
+
+.payment-gateway img {
+  width: 70%;
+  height: 40%;
+  
+}
+
+.registration-form {
+  flex: 2;
+  padding: 20px;
+}
+
+.registration-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: blue;
+}
+.payment-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.payment-image {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.payment-image:hover {
+  transform: scale(1.1);
+  background-color: #f1f1f1;
 }
